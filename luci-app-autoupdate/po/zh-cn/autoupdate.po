@@ -80,7 +80,7 @@ msgid "Automatically update firmware during the specified time when Enabled"
 msgstr "启用后,将在指定时间段自动检查并更新固件"
 
 msgid "Upgrade without keeping System-Config"
-msgstr "更新固件 (不保留配置),别点错了。"
+msgstr "更新固件 (不保留配置,不保留配置,不保留配置),别点错了。"
 
 msgid "Upgrade with Force Flashing (DANGEROUS)"
 msgstr "更新固件且强制刷入固件 (危险)"
