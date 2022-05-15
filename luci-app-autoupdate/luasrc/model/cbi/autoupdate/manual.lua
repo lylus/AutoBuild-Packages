@@ -40,7 +40,7 @@ end
 upgrade_script = s:option (Button, "_upgrade_script", translate("Upgrade Script"),translate("Using the latest Script may solve some compatibility problems") .. "<br><br>当前脚本版本: " .. local_script_version .. "<br>云端脚本版本: " .. cloud_script_version)
 upgrade_script.inputtitle = translate ("Do Upgrade")
 upgrade_script.write = function()
-	luci.sys.call ("bash /bin/AutoUpdate.sh -x > /dev/null &")
+	luci.sys.call ("bash /bin/AutoUpdate.sh -x -P > /dev/null &")
 	luci.http.redirect(luci.dispatcher.build_url("admin", "system", "autoupdate","log"))
 end
 
