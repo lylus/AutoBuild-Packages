@@ -1,12 +1,14 @@
-# Copyright (C) 2020-2021 Hyy2001X <https://github.com/Hyy2001X>
+# Copyright (C) 2020-2022 Hyy2001X <https://github.com/Hyy2001X>
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI Support for AutoUpdate Script
-LUCI_DEPENDS:=+bash +jq
-LUCI_PKGARCH:=all
-PKG_VERSION:=2.4
+PKG_NAME:=luci-app-autoupdate
+PKG_VERSION:=2.8
 PKG_RELEASE:=2
+
+LUCI_TITLE:=LuCI Support for autoupdate
+LUCI_DEPENDS:=+autoupdate
+LUCI_PKGARCH:=all
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
